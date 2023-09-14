@@ -94,7 +94,6 @@ header {
 .content .text-box h2 span {
     color: var(--green);
 }
-
 .dark .content .text-box h2 span {
     color: #00ff9b;
 } 
