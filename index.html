@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dork Mode</title>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--Main CSS  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <header>
+      <a href="#"><img src="imgs/logo.png" alt="logo" class="logo"></a>
+      <div class="toggle"></div>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">content</a></li>
+        <li><a href="#">products</a></li>
+        <li><span class="themSwitch"></span></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="text-box">
+        <h2>it 's nont coffe <br> it 's <span> starbucks </span> </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ab harum animi voluptatum modi eos ut
+          tenetur vero at iste repellendus totam, doloremque commodi nihil dolorum vel tempore perspiciatis aspernatur.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+      <div class="imgs-box">
+        <img src="imgs/Main-starbuck.png" alt="phote">
+      </div>
+    </div>
+    <ul class="scr">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </section>
+
+  <script>
+    let themSwitch = document.querySelector(".themSwitch");
+    let body = document.querySelector("body");
+    themSwitch.onclick = function () {
+      body.classList.toggle("dark");
+      themSwitch.classList.toggle("active")
+    }
+    let toggle = document.querySelector(".toggle");
+    let nav = document.querySelector(".nav")
+    toggle.onclick = function () {
+      toggle.classList.toggle("active");
+      nav.classList.toggle("active");
+
+    }
+  </script>
+</body>
+
+</html>
